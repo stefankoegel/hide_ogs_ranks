@@ -18,7 +18,7 @@ function hideRankInSpan(span) {
 // Hide ranks that are in the document when the extension is executed
 hideRankInChildren(document.body);
 
-function hideRanksOnMutation(mutations, _) {
+function hideRanksOnMutation(mutations) {
   for(let mutation of mutations) {
     const target = mutation.target
     if(target.tagName == "SPAN") {
