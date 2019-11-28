@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Hide OGS ranks",
+  "version": "1.0",
+
+  "description": "Hides ranks next to player names on online-go.com.",
+
+  "icons": {
+    "48": "icons/hide_ogs_ranks_48.png",
+    "96": "icons/hide_ogs_ranks_96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.online-go.com/*"],
+      "js": ["hide_ogs_ranks.js"]
+    }
+  ]
+}
