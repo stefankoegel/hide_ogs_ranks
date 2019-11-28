@@ -4,6 +4,7 @@
   "version": "1.0",
 
   "description": "Hides ranks next to player names on online-go.com.",
+  "homepage_url": "https://github.com/stefankoegel/hide_ogs_ranks",
 
   "icons": {
     "48": "icons/hide_ogs_ranks_48.png",
