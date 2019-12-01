@@ -3,7 +3,7 @@
   "name": "Hide OGS ranks",
   "version": "1.0",
 
-  "description": "Hides ranks next to player names on online-go.com.",
+  "description": "Hide player ranks on online-go.com.",
   "homepage_url": "https://github.com/stefankoegel/hide_ogs_ranks",
 
   "icons": {
