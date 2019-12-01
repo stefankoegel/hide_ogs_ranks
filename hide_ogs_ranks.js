@@ -3,7 +3,7 @@
 // This also includes the rating table and graph on the player pages.
 // Some ratings are added later on to the web page or are contained in player names.
 // We have to handle these differently.
-const cssStyle = `span.Player-rank { visibility: hidden }
+const cssStyle = `span.Player-rank { display: none }
                   span.rating      { display: none }
                   span.rank        { display: none }
                 
@@ -64,7 +64,7 @@ function addUnhideRatingsListener() {
       const rank = document.querySelector(".avatar-container .Player-rank");
       table.style.setProperty("visibility", "visible");
       graph.style.setProperty("visibility", "visible");
-      rank.style.setProperty("visibility", "visible");
+      rank.style.setProperty("display", "inline");
 
       event.stopPropagation();
     }
