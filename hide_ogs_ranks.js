@@ -1,20 +1,9 @@
 
-// We hide most of the ratings via CSS.
-// This also includes the rating table and graph on the player pages.
+// We hide most of the ratings via the CSS in 'hide_ogs_ranks.css',
+// including the rating table and graph on the player pages.
+
 // Some ratings are added later on to the web page or are contained in player names.
 // We have to handle these differently.
-const cssStyle = `span.Player-rank { display: none }
-                  span.rating      { display: none }
-                  span.rank        { display: none }
-                
-                  div.ratings-row > div { visibility: hidden }
-                
-                  div.ratings-container > div { visibility: hidden }`;
-
-const styleElement = document.createElement("style");
-styleElement.type = "text/css";
-styleElement.appendChild(document.createTextNode(cssStyle));
-document.head.append(styleElement);
 
 // Hide ranks in player names that are on the website when the extension is executed.
 hideRanks(document.body);

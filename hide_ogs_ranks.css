@@ -1,0 +1,7 @@
+span.Player-rank { display: none }
+span.rating      { display: none }
+span.rank        { display: none }
+
+div.ratings-row > div { visibility: hidden }
+
+div.ratings-container > div { visibility: hidden }

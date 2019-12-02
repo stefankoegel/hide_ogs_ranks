@@ -14,7 +14,9 @@
   "content_scripts": [
     {
       "matches": ["*://*.online-go.com/*"],
-      "js": ["hide_ogs_ranks.js"]
+      "run_at": "document_end",
+      "js": ["hide_ogs_ranks.js"],
+      "css": ["hide_ogs_ranks.css"]
     }
   ]
 }
